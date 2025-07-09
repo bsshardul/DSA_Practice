@@ -12,6 +12,7 @@ public class TopKFreqElements {
 	public static int[] topKFrequent(int[] nums, int k) {
         // TODO: Implement your logic here
 		Map<Integer,Integer> count = new HashMap<>();
+		@SuppressWarnings("unchecked")
 		List<Integer> freq[]=new List[nums.length];
 		for(int i=0;i<nums.length;i++) {
 			freq[i]= new ArrayList<>();
